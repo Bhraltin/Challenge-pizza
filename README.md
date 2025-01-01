@@ -63,6 +63,7 @@ Proje iki zorluk aşamalı,
 
 - [ ] 1. **Create Repo From Template & Clone:**
 
+<<<<<<< HEAD
   - Sağ üstteki yeşil "Use this template" butonu ile, bir kopya oluşturun. işlemi tamamlandıktan sonra, kendi GitHub hesabınızda yer alan depo bağlantısını kopyalayın.
   - VS Code'u açın ve terminali başlatın. Aşağıdaki komutu kullanarak depoyu bilgisayarınıza klonlayın:
     ```sh
@@ -72,12 +73,26 @@ Proje iki zorluk aşamalı,
     ```sh
     git clone https://github.com/sizin-hesabiniz/fsweb-s8-challenge-pizza
     ```
+=======
+   - Sağ üstteki yeşil "Use this template" butonu ile, bir kopya oluşturun. işlemi tamamlandıktan sonra, kendi GitHub hesabınızda yer alan depo bağlantısını kopyalayın.
+   - VS Code'u açın ve terminali başlatın. Aşağıdaki komutu kullanarak depoyu bilgisayarınıza klonlayın:
+     ```sh
+     git clone <Yeni-Repo-URL'niz>
+     ```
+   - Örnek:
+     ```sh
+     git clone https://github.com/sizin-hesabiniz/fsweb-s7-challenge-pizza
+     ```
+>>>>>>> a3f8cbf1e4011b701203e2cceb2a907509f8dada
 
 2. **VS Code'da Geliştirmeye Başlamak:**
    - VS Code'u açın ve `File -> Open Folder` seçeneğiyle projeyi açın.
 
 - Terminalde aşağıdaki komutları sırasıyla çalıştırarak proje bağımlılıklarını yükleyin ve projeyi başlatın:
+<<<<<<< HEAD
 
+=======
+>>>>>>> a3f8cbf1e4011b701203e2cceb2a907509f8dada
   ```sh
   npm install
   npm run dev
@@ -86,7 +101,10 @@ Proje iki zorluk aşamalı,
 - [ ] Yeni reponuzu bilgisayarınıza klonlayın
 
 3. **Geliştirmeye Başlayın** 🤓 👩‍💻 🧑‍💻
+<<<<<<< HEAD
 
+=======
+>>>>>>> a3f8cbf1e4011b701203e2cceb2a907509f8dada
 - [ ] Main branch üzerinde çalışın
 - [ ] Comitinizi pushlayın: `git push origin main`
 - [ ] Farklı paketler kullanmaya çalışın.
@@ -100,9 +118,15 @@ Proje iki zorluk aşamalı,
 
 Zamanı verimli kullanmak için aşağıdaki sırayla geliştirme yapmanı tavsiye ediyoruz. Mobil ekranlar için Figma dosyasına da bakabilirsin.
 
+<<<<<<< HEAD
 1.  [Sipariş Formu](./sample-interfaces/iteration-1/OrderPizza.png)
 2.  [Anasayfa](./sample-interfaces/iteration-1/Home.png)
 3.  [Sipariş Onayı](./sample-interfaces/iteration-1/Success.png)
+=======
+1.  [Sipariş Formu](./Interfaces/Iteration-1/OrderPizza.png)
+2.  [Anasayfa](./Interfaces/Iteration-1/Home.png)
+3.  [Sipariş Onayı](./Interfaces/Iteration-1/Success.png)
+>>>>>>> a3f8cbf1e4011b701203e2cceb2a907509f8dada
 
 #### Renk Kodları
 
@@ -178,9 +202,15 @@ Tarayıcı açıldıktan sonra da, VSCode'da yeni oluşturduğun cypress klasör
 
 Zamanı verimli kullanmak için aşağıdaki sırayla geliştirme yapmanı tavsiye ediyoruz.
 
+<<<<<<< HEAD
 1.  [Sipariş Onayı](./sample-interfaces/iteration-2/Success.png)
 2.  [Anasayfa](./sample-interfaces/iteration-2/Home.png)
 3.  [Sipariş Formu](./sample-interfaces/iteration-2/OrderPizza.png)
+=======
+1.  [Sipariş Onayı](./Interfaces/Iteration-2/Success.png)
+2.  [Anasayfa](./Interfaces/Iteration-2/Home.png)
+3.  [Sipariş Formu](./Interfaces/Iteration-2/OrderPizza.png)
+>>>>>>> a3f8cbf1e4011b701203e2cceb2a907509f8dada
 
 ### Görev 3: IT2 Proje Gereklilikleri
 
@@ -192,7 +222,11 @@ IT1'i bitirdikten sonra çalışmanı daha da ileri götürebilirsin. Buradaki h
   - [ ] Sipariş POST edilirken bir ağ hatası olasılığı için kullanıcıya geribildirim verebilmelisin (örnek: İnternet'e bağlanılamadı)
 - [ ] Tasarım Güncellemesi: **Anasayfa** çok daha çeşitli tasarım öğeleriyle zenginleştir.
 - [ ] Tasarım Güncellemesi: **Sipariş** Form elemanlarını (inputlar), özel renk ve tasarım diline göre güncelle
+<<<<<<< HEAD
 - [ ] Cypressle daha çok test yaz.
+=======
+- [ ] Cypressle daha çok test yaz. 
+>>>>>>> a3f8cbf1e4011b701203e2cceb2a907509f8dada
 
 İpucu: Özelleştirilmiş Checkbox ve Radio için [W3 örneğine](https://www.w3schools.com/howto/howto_css_custom_checkbox.asp) bakabilirsiniz.
 İpucu: Sayfalar arası veri taşırken, (sipariş formundan, sonuş sayfasına), router veya başka bir global state management aracı kullanmadan, sadece [Prop-Lifting](https://react.dev/learn/sharing-state-between-components) tekniğiyle, projenizi geliştirmenizi bekliyoruz.
