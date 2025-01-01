@@ -1,9 +1,9 @@
-import "./Header.css"
+import "./Header.css";
 export default function Header() {
  
   return (
      <div className="header">
-     <img src="src/assets/logo.svg"/>
+     <img src="../public/logo.svg" alt="logo"/>
      </div>
   );
 }

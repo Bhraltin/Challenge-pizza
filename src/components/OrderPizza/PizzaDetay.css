@@ -1,0 +1,22 @@
+.pizza-detay {
+    font-family: Roboto Condensed, sans-serif;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: auto;
+   
+   
+  
+    
+}
+.spans {
+ display: flex;
+ justify-content: space-between;
+gap: 15em;
+line-height: 3em;
+}
+.fiyat {
+    text-align: right;
+}
+

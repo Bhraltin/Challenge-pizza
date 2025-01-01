@@ -1,0 +1,10 @@
+.order {
+    display: flex;
+  
+   justify-content: center;
+    flex-direction: column;
+    background-color: var( --primary-beige);
+    line-height: 2em;
+    height: 100%;
+    width: 100%;
+}

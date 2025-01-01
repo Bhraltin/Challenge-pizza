@@ -1,3 +1,13 @@
-.Header {
+.header {
     background-color: var(--primary-red);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    font-size: 3rem;
+   padding: 20px;
+    justify-content: center;
+    
+
+
 }

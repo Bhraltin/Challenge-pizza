@@ -1,0 +1,9 @@
+.success {
+    font-size: 5rem;
+    background-color: var(--primary-red);
+    text-align: center;
+    margin: 0;
+    padding: 25px;;
+    justify-content: center;
+    height: 100vh;
+}

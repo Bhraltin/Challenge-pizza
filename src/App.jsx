@@ -1,19 +1,29 @@
-import React from "react"
+import React, { useState } from "react"
 import Header from './components/Header/Header'
-import Success from "./components/Success"
+import Success from "./Succes/Success"
 import Home from "./components/Home/Home"
-import OrderPizza from "./components/OrderPizza/OrderPizza"
+import OrderPizza from './components/OrderPizza/OrderPizza';
+
 
 
 
 function App() {
+  const [sayfa, setSayfa] = useState('home');
+
+ function handleSayfa(yeniSayfa) {
+  setSayfa(yeniSayfa);
+  }
+
 return (
-<>
-<Header/>
-<Home/>
-<OrderPizza/>
-<Success/>
-</>
+
+   
+<div>
+      <Header />
+      {sayfa === 'home' && <Home handleSayfa={() => handleSayfa('orderPizza')} />}
+      {sayfa === 'orderPizza' && <OrderPizza handleSayfa={() => handleSayfa('success')} />}
+      {sayfa === 'success' && <Success/>}
+    </div>
+
 
 
 
