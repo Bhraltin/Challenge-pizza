@@ -10,7 +10,6 @@ export default function Card({className, img, text}) {
     <span>(200)</span>
     <span><strong>60₺</strong></span>
 </div>
-
-        </li>
+ </li>
     )
 }

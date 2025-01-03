@@ -1,0 +1,52 @@
+
+.images {
+  display: grid;
+  grid-template-areas:"kart3","kart2","kart1";
+  gap: 20px;
+  padding: 20px;
+}
+
+.kart1 {
+  grid-area: kart1;
+}
+
+.kart2,
+.kart3 {
+  grid-area: kart2 kart3;
+}
+
+.kart {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 150px
+}
+
+.kart img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--primary-red)
+}
+

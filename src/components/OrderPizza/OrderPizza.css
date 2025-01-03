@@ -4,13 +4,20 @@
     font-size: 1rem;
     color: var(--primary-grey);
     line-height: 2rem;
-    width: 70%;
+    width: 50%;
    margin: auto;
     padding: 2em;
     font-family: "Barlow", sans-serif;
     justify-content: space-between;
     align-items: center;
 
+}
+.image {
+    width: 50%;
+    position: relative; 
+    object-fit: cover; 
+    top: -190px;
+    z-index: -1; 
 }
 
 .order-pizza {

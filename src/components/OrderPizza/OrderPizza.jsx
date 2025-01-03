@@ -12,13 +12,13 @@ const bilgiler = {
   name: "",
 }
 
-export default function OrderPizza({pizza}) {
+export default function OrderPizza({pizza, setOrderStep}) {
 const [order, setOrder] = useState(bilgiler);
 const [error, setError] = useState({});
 const [amount, setAmount] = useState(1);
 const [isDisabled, setIsdisabled] = useState(true);
 
-const extraPrice = order.extra.length+5;
+const extraPrice = order.extra.length * 5;
 const totalPrice = amount * (pizza.price.slice(0, -1) + extraPrice);
 
 
@@ -71,6 +71,9 @@ setOrder((prev) => ({
 return (
 
   <div className="order-page">
+    <div className="image">
+      <img src="../public/pictures/food-2.png"/>
+    </div>
   <h1>Position Absolute Acı Pizza</h1>
   <p>{pizza.description}</p>
 <form className="order-form" handleSubmit={handleSubmit}>
@@ -108,7 +111,7 @@ onChange={(e) => setOrder({...order, kalinlik: e.target.value})}>
   <section>
     <h3>Ek Malzemeler</h3>
     {error.extra && <p className="order-error">{error.extra}</p>}
-    <p>En fazla 10 malzeme seçebilirsiniz 5tl</p>
+    <p>En fazla 10 malzeme seçebilirsiniz 5₺</p>
     <div className="ekler">
   {pizza.malzemeler.map((malzeme) => (
     <label key={malzeme}>
@@ -144,8 +147,8 @@ onChange={handleExtre} />
   <div className="arti-eksi">
   <button className="button-amount-change"
   type="button"
-  onClick={()=>setAmount(amount > 1 ? amount-1 : 1)}>-
-  </button>1
+  onClick={()=>setAmount(amount-1)}>-
+  </button>{amount}
   <button className="button-amount-change"
   type="button"
   onClick={()=>setAmount(amount+1)}>+
@@ -164,6 +167,7 @@ onChange={handleExtre} />
 <button className="button-form-submit"
 type="submit"
 disabled={isDisabled}
+onClick={(()=>setOrderStep("success"))}
 >
   Onayla
 </button>

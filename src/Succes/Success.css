@@ -1,9 +1,21 @@
 .success {
-    font-size: 5rem;
     background-color: var(--primary-red);
-    text-align: center;
-    margin: 0;
-    padding: 25px;;
-    justify-content: center;
+  text-align: center;
+ 
     height: 100vh;
+    color: var(--primary-beige);
+    display: flex;
+
+    flex-direction: column;
+
+}
+.başlık {
+    font-size: 5rem;
+
+}
+.ozet p{
+    font-size: 1.5 rem;
+    gap: 20rem;
+    margin: 30px;
+  
 }

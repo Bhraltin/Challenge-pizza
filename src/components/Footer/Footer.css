@@ -3,6 +3,8 @@
     background-color: var(--primary-darkgrey);
     font-family: "Barlow",sans-serif;
     font-size: 0.9 rem; 
+    gap: 30px;
+    justify-content: center;
 }
 
 .footer-container>h2 {
@@ -21,7 +23,10 @@
 }
 .insta {
 display: flex;
-float: left;
-flex-direction: column;
+justify-content: center;
+flex-direction: row;
+align-items: center;
 }
-
+.insta img {
+   
+}
