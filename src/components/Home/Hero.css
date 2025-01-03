@@ -1,0 +1,28 @@
+.hero {
+    position: absolute;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: var(--primary-beige);
+    z-index: 2; 
+  }
+  
+  .hero-container {
+    padding: 20px;
+
+  }
+  
+  .hero-main p {
+    font-size: 6rem; 
+    margin: 10px 0;
+  }
+  
+.hero-button{
+    background-color: var(--primary-yellow);
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 1em, 3em;
+    margin-bottom: 1.5em;
+   
+}

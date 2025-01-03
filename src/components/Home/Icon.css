@@ -1,0 +1,19 @@
+.icon-container {
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: #333;
+    gap: 10px; 
+  }
+  .menu-item img {
+    width: 24px; 
+    height: 24px;
+  }

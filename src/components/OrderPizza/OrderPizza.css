@@ -1,10 +1,67 @@
-.order {
+.order-page {
     display: flex;
-  
-   justify-content: center;
     flex-direction: column;
-    background-color: var( --primary-beige);
-    line-height: 2em;
-    height: 100%;
-    width: 100%;
+    font-size: 1rem;
+    color: var(--primary-grey);
+    line-height: 2rem;
+    width: 70%;
+   margin: auto;
+    padding: 2em;
+    font-family: "Barlow", sans-serif;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.order-pizza {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.order-form {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.order-error {
+    color: var(--primary-red)
+}
+.ekler {
+  
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-gap: 2px;
+}
+.button-amount-change {
+    background-color: var(--primary-yellow);
+    padding: 10px
+}
+.button-form-submit {
+background-color: var(--primary-yellow);
+padding: 5px, 10px;
+margin: 5px;
+
+
+}
+.order-summary
+{
+ border: 1px solid black;
+ flex: 1;
+ padding: 10px;
+
+}
+
+.arti-eksi {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   flex: 1;
+align-items: center;
+
+   
+    
+  
 }
