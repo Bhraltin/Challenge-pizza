@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./OrderPizza.css";
-import { pizza } from "../Pizzadata";
+
 import axios from "axios";
 
 
@@ -19,7 +19,7 @@ const [amount, setAmount] = useState(1);
 const [isDisabled, setIsdisabled] = useState(true);
 
 const extraPrice = order.extra.length * 5;
-const totalPrice = amount * (pizza.price.slice(0, -1) + extraPrice);
+const totalPrice = amount * (pizza.price.slice(0,-1) + extraPrice);
 
 
 function formValidation() {
@@ -46,7 +46,7 @@ axios.get("https://reqres.in/api/pizza", order)
   console.log(response)
 })
 .catch(error =>
-  console.warn(erro)
+  console.warn(error)
 )
 }
 
@@ -147,7 +147,7 @@ onChange={handleExtre} />
   <div className="arti-eksi">
   <button className="button-amount-change"
   type="button"
-  onClick={()=>setAmount(amount-1)}>-
+  onClick={()=>setAmount(amount > 1 ? amount-1 : 1)}>-
   </button>{amount}
   <button className="button-amount-change"
   type="button"
@@ -161,7 +161,7 @@ onChange={handleExtre} />
       <p>{extraPrice}₺</p>
     </div>
     <p>Toplam</p>
-    <p>{totalPrice}</p>
+    <p>{totalPrice}₺</p>
   </div>
   </div>
 <button className="button-form-submit"

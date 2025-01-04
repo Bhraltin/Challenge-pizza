@@ -1,5 +1,6 @@
 import "./Success.css";
 export default function Success() {
+
 return (
     <div className="success">
       <div className="başlık">
@@ -13,8 +14,11 @@ return (
         <p>Hamur: Süpper İnce</p>
         <p>Ek Malzemeler: Pepproni, Sosis, Mısır, Ananas, jalepeno</p>
         </div>
-  </div>
+</div>
 
+  
+         
+    
 
 
   )
